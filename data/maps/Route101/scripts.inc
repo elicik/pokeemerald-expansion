@@ -22,18 +22,18 @@ Route101_EventScript_StartBirchRescue::
 	msgbox Route101_Text_HelpMe, MSGBOX_DEFAULT
 	closemessage
 	setobjectxy LOCALID_ROUTE101_BIRCH, 0, 15
-	setobjectxy LOCALID_ROUTE101_ZIGZAGOON, 0, 16
+	setobjectxy LOCALID_ROUTE101_BIDOOF, 0, 16
 	applymovement LOCALID_PLAYER, Route101_Movement_EnterScene
 	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunAway1
-	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChase1
+	applymovement LOCALID_ROUTE101_BIDOOF, Route101_Movement_BidoofChase1
 	waitmovement 0
-	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonChaseInCircles
+	applymovement LOCALID_ROUTE101_BIDOOF, Route101_Movement_BidoofChaseInCircles
 	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchRunInCircles
 	waitmovement 0
 	applymovement LOCALID_ROUTE101_BIRCH, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	applymovement LOCALID_ROUTE101_ZIGZAGOON, Route101_Movement_ZigzagoonFaceBirch
-	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchFaceZigzagoon
+	applymovement LOCALID_ROUTE101_BIDOOF, Route101_Movement_BidoofFaceBirch
+	applymovement LOCALID_ROUTE101_BIRCH, Route101_Movement_BirchFaceBidoof
 	waitmovement 0
 	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
 	closemessage
@@ -80,7 +80,7 @@ Route101_Movement_PreventExitNorth:
 	walk_down
 	step_end
 
-Route101_Movement_ZigzagoonChaseInCircles:
+Route101_Movement_BidoofChaseInCircles:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -113,7 +113,7 @@ Route101_Movement_ZigzagoonChaseInCircles:
 	walk_fast_left
 	step_end
 
-Route101_Movement_ZigzagoonChase1:
+Route101_Movement_BidoofChase1:
 	walk_fast_up
 	walk_fast_right
 	walk_fast_right
@@ -125,7 +125,7 @@ Route101_Movement_ZigzagoonChase1:
 @ Leftover data? This command is unused.
 	step_end
 
-Route101_Movement_ZigzagoonFaceBirch:
+Route101_Movement_BidoofFaceBirch:
 	walk_in_place_fast_left
 	walk_in_place_fast_left
 	walk_in_place_fast_left
@@ -185,7 +185,7 @@ Route101_Movement_BirchRunAway1:
 @ Leftover data? This command is unused.
 	step_end
 
-Route101_Movement_BirchFaceZigzagoon:
+Route101_Movement_BirchFaceBidoof:
 	walk_in_place_fast_right
 	walk_in_place_fast_right
 	walk_in_place_fast_right
@@ -221,7 +221,7 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_ROUTE101_ZIGZAGOON
+	removeobject LOCALID_ROUTE101_BIDOOF
 	setobjectxy LOCALID_PLAYER, 6, 13
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0

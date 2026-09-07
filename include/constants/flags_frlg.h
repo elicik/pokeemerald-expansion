@@ -2051,7 +2051,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0
 #define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0
 #define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0
-#define FLAG_HIDE_ROUTE_101_ZIGZAGOON                               0
+#define FLAG_HIDE_ROUTE_101_BIDOOF                               0
 #define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0
 #define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0

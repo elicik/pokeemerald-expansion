@@ -402,8 +402,16 @@ static const struct SpriteFrameImage sPicTable_BirchsBag[] = {
     obj_frame_tiles(gObjectEventPic_BirchsBag),
 };
 
-static const struct SpriteFrameImage sPicTable_EnemyZigzagoon[] = {
-    overworld_ascending_frames(gObjectEventPic_EnemyZigzagoon, 4, 4),
+static const struct SpriteFrameImage sPicTable_EnemyBidoof[] = {
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 1),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 3),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 5),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 1),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 0),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 2),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 3),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 4),
+    overworld_frame(gObjectEventPic_EnemyBidoof, 4, 4, 5),
 };
 
 static const struct SpriteFrameImage sPicTable_Artist[] = {

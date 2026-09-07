@@ -1744,9 +1744,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirchsBag = {
     .images = sPicTable_BirchsBag,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EnemyZigzagoon = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EnemyBidoof = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_ZIGZAGOON,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BIDOOF,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 512,
     .width = 32,
@@ -1759,7 +1759,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EnemyZigzagoon = {
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_EnemyZigzagoon,
+    .images = sPicTable_EnemyBidoof,
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poochyena = {
